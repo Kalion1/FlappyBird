@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+   
+   
     public float c_thrust;
     public float c_maxSpeedY_Up;
     public float c_maxSpeedY_Down;
@@ -31,4 +33,5 @@ public class Player : MonoBehaviour
             f_rigid.velocity = new Vector2(0f, c_maxSpeedY_Down);
         }
     }
+
 }
