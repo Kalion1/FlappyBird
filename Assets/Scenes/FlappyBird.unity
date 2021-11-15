@@ -671,6 +671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 1987912790}
   tuyaux: {fileID: 259980700}
+  gameOver: 0
 --- !u!4 &786257665
 Transform:
   m_ObjectHideFlags: 0
@@ -1432,6 +1433,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 997610621443453458, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
+      propertyPath: m_Name
+      value: pipe-green(0)
+      objectReference: {fileID: 0}
     - target: {fileID: 2136910058766758015, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.62
@@ -1488,6 +1493,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6673050250560524351, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
+      propertyPath: m_Name
+      value: pipe-green (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 7011565744092767746, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.0999994
@@ -1495,6 +1504,10 @@ PrefabInstance:
     - target: {fileID: 7011565744092767746, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560517568125590652, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
+      propertyPath: m_Name
+      value: pipe-green (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7798351056151783349, guid: 15474e7a1447c5440be3527792d536b7, type: 3}
       propertyPath: m_LocalPosition.x
