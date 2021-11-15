@@ -5,7 +5,8 @@ using UnityEngine;
 public class Tuyaux : MonoBehaviour
 {
     public GameManager gameManager;
-    public float d_speed = 1f;
+    public float d_speed = 0.5f;
+
     void Update()
     {
        
@@ -14,8 +15,14 @@ public class Tuyaux : MonoBehaviour
 
         if (transform.position.x <= -10)
         {
-            transform.position = transform.position + new Vector3(15f, 0f, 0f);
+            transform.position = transform.position + new Vector3(18f, 0f, 0f);
         }
+
+        if (gameManager.gameOver){
+            d_speed = 0;
+            Debug.Log("mort");
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D p_collision)
@@ -24,7 +31,6 @@ public class Tuyaux : MonoBehaviour
         {
             p_collision.gameObject.SetActive(false);
             gameManager.GameOver();
-            Debug.Log("mort");
         }
     }
 }

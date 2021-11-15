@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
     public Tuyaux tuyaux;
+    public bool gameOver = false;
+ 
 
     private void Start()
     {
@@ -17,8 +19,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverCanvas.SetActive(true);
-        tuyaux.d_speed = 0;
-        Debug.Log(tuyaux.d_speed);
+        gameOver = true;
     }
 
     public void Replay()
