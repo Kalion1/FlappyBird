@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-   
-   
+    public GameObject ScoreCanvas;
     public float c_thrust;
     public float c_maxSpeedY_Up;
     public float c_maxSpeedY_Down;
@@ -15,13 +14,15 @@ public class Player : MonoBehaviour
         
     }
 
-    void Update()
-    {   
+   void Update()
+   {   
         Rigidbody2D f_rigid = GetComponent<Rigidbody2D>();
-
+        
         if(Input.GetKeyDown(KeyCode.Space))
         {
-           f_rigid.AddForce(Vector2.up * c_thrust, ForceMode2D.Force); 
+            ScoreCanvas.SetActive(true);
+
+            f_rigid.AddForce(Vector2.up * c_thrust, ForceMode2D.Force); 
         }
 
         if (f_rigid.velocity.y > c_maxSpeedY_Up)
@@ -32,6 +33,6 @@ public class Player : MonoBehaviour
         {
             f_rigid.velocity = new Vector2(0f, c_maxSpeedY_Down);
         }
-    }
+   }
 
 }

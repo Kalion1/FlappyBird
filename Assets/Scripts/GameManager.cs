@@ -8,14 +8,20 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverCanvas;
     public Tuyaux tuyaux;
     public bool gameOver = false;
+    public GameObject ScoreCanvas;
+    public AddScore AddScore;
  
 
     private void Start()
     {
-        
+
+        ScoreCanvas.SetActive(false);
         gameOverCanvas.SetActive(false);
         
+        
     }
+
+
     public void GameOver()
     {
         gameOverCanvas.SetActive(true);
