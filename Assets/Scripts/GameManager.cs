@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
         ScoreCanvas.SetActive(false);
         gameOverCanvas.SetActive(false);
         
-        
     }
 
 
@@ -30,7 +29,8 @@ public class GameManager : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+        Debug.Log("GO");
     }
 
 

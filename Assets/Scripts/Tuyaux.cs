@@ -30,6 +30,7 @@ public class Tuyaux : MonoBehaviour
         if (p_collision.GetComponent<Player>() != null)
         {
             p_collision.gameObject.SetActive(false);
+
             gameManager.GameOver();
         }
     }
