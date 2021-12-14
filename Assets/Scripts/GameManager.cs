@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
 
+        
+        Screen.SetResolution(750, 1334, true);
+        
         ScoreCanvas.SetActive(false);
         gameOverCanvas.SetActive(false);
         
